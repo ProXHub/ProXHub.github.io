@@ -48,9 +48,13 @@
         <br>
         <img src="assets/QR-code.png">
         <br>
-        <br>
 
-        <button id="Btn">Check Transaction</button>
+        <p>Wallet Address:</p>
+        <input type="text" value="0x10f628AABF913b7c835B2D82Df7dB32a5a3df117" id="textToCopy" readonly>
+        <button class="copy-button" onclick="copyText()"><span class="copy-symbol"></span>Copy</button>
+        <br><br>
+
+        <button class="btn" id="btn">Check Transaction</button>
         <!-- The loading spinner -->
         <div id="loader2" class="loader2"></div>
         <!-- The popup message -->

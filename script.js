@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.getElementById("Btn").addEventListener("click", function () {
+document.getElementById("btn").addEventListener("click", function () {
     var loader2 = document.getElementById("loader2");
     var popup = document.getElementById("popup");
     // Display loader2
@@ -48,3 +48,12 @@ document.getElementById("Btn").addEventListener("click", function () {
 document.querySelector(".popup-close").addEventListener("click", function () {
     document.getElementById("popup").style.display = "none";
 });
+
+
+function copyText() {
+    var text = document.getElementById("textToCopy");
+    text.select();
+    text.setSelectionRange(0, 99999); /* For mobile devices */
+    document.execCommand("copy");
+    alert("Text copied to clipboard: " + text.value);
+}
