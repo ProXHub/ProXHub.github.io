@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#e0800b" />
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <title>PRO X | Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="hideLoader()">
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <div class="users">
+        <div class="green-point"></div>
+        <p><span id="userCount"></span> online users.</p>
+    </div>
+
+    <div class="main">
+        <p id="ip_message"></p>
+        <hr>
+        <br>
+        <p>Your account is <span class="warning">NOT Activated</span> yet! Press Activate and follow the steps to access our services.</p>
+        <br>
+        <a href="activate" class="green-portal">Activate</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

